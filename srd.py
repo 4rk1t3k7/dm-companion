@@ -59,7 +59,7 @@ def fetch_monster_list():
                         "size": monster_size,
                         "type": monster_type,
                         "alignment": monster_alignment,
-                        "ac": monster_alignment,
+                        "ac": monster_ac,
                         "hp": monster_hp,
                         "hp_roll": monster_hp_roll,
                         "speed": monster_speed,
@@ -112,7 +112,7 @@ def config(filename='database.ini', section='postgresql'):
 
 def update_db(monster_json):
     conn = None
-    monster_list = json.loads(monster_json)
+#    monster_list = json.loads(monster_json)
 
     print(monster_json)
 
